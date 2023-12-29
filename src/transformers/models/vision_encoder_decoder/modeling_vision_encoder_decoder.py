@@ -14,7 +14,7 @@
 # limitations under the License.
 """ Classes to support Vision-Encoder-Text-Decoder architectures"""
 
-
+import ipdb
 import gc
 import os
 import tempfile
@@ -602,6 +602,7 @@ class VisionEncoderDecoderModel(PreTrainedModel):
             )
 
         # Decode
+        ipdb.set_trace(context=6)
         decoder_outputs = self.decoder(
             input_ids=decoder_input_ids,
             attention_mask=decoder_attention_mask,
