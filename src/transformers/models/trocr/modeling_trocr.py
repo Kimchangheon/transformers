@@ -357,7 +357,6 @@ class TrOCRDecoderLayer(nn.Module):
         )
         # ipdb.set_trace(context=6)
         hidden_states = nn.functional.dropout(hidden_states, p=self.dropout, training=self.training)
-        hidden_states = residual + hidden_states
         # hidden_states = residual + hidden_states
         hidden_states = self.self_attn_layer_norm(hidden_states)
 
