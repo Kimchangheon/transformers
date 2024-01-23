@@ -602,7 +602,7 @@ class VisionEncoderDecoderModel(PreTrainedModel):
             )
 
         # Decode
-        ipdb.set_trace(context=6)
+        # ipdb.set_trace(context=6)
         decoder_outputs = self.decoder(
             input_ids=decoder_input_ids,
             attention_mask=decoder_attention_mask,
